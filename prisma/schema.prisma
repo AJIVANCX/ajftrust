@@ -1,0 +1,27 @@
+model Intern {
+  id             Int      @id @default(autoincrement())
+
+  applicationId  String   @unique
+
+  fullName       String
+  fatherName     String
+  motherName     String
+
+  dob            String
+
+  mobile         String
+  email          String   @unique
+
+  address        String
+  pinCode        String
+
+  state          String
+  district       String
+
+  username       String   @unique
+  password       String
+
+  status         String   @default("Pending")
+
+  createdAt      DateTime @default(now())
+}
