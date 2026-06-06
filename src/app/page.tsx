@@ -7,6 +7,7 @@ import GallerySection from "../components/GallerySection";
 import PartnersSection from "../components/PartnersSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import DonateCTASection from "../components/DonateCTASection";
+import Newsletter from "../components/Newsletter";
 
 export default function Page() {
 return ( <main className="overflow-hidden bg-white">
@@ -43,6 +44,10 @@ return ( <main className="overflow-hidden bg-white">
 
   <section id="donate">
     <DonateCTASection />
+  </section>
+
+  <section id="newsletter">
+    <Newsletter />
   </section>
 
 </main>
