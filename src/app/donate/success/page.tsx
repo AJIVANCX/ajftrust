@@ -11,9 +11,7 @@ function SuccessContent() {
 
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
-
       <div className="bg-white p-10 rounded-3xl shadow-xl text-center max-w-xl w-full">
-
         <h1 className="text-4xl font-bold text-green-600">
           Donation Successful
         </h1>
@@ -34,9 +32,7 @@ function SuccessContent() {
         >
           Download Receipt PDF
         </a>
-
       </div>
-
     </div>
   );
 }
