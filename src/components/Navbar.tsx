@@ -3,8 +3,8 @@
 import Link from "next/link";
 
 export default function Navbar() {
-return ( <nav
-   className="
+  return (<nav
+    className="
    w-full
    bg-gradient-to-r
    from-slate-900
@@ -15,9 +15,9 @@ return ( <nav
    border-yellow-500
    shadow-lg
    "
- > <div className="max-w-7xl mx-auto px-6">
-    <ul
-      className="
+  > <div className="max-w-7xl mx-auto px-6">
+      <ul
+        className="
       flex
       flex-wrap
       justify-center
@@ -29,150 +29,169 @@ return ( <nav
       lg:text-base
       font-medium
       "
-    >
-      <li>
-        <Link
-          href="/"
-          className="hover:text-yellow-400 transition duration-300"
-        >
-          Home
-        </Link>
-      </li>
-
-      {/* About */}
-      <li className="group relative">
-
-        <span className="cursor-pointer hover:text-yellow-400 transition">
-          About Us ▾
-        </span>
-
-        <div
-          className="
-          absolute
-          hidden
-          group-hover:block
-          bg-white
-          text-gray-800
-          w-64
-          rounded-xl
-          shadow-2xl
-          top-10
-          z-50
-          overflow-hidden
-          "
-        >
-          <Link href="/about" className="block px-5 py-3 hover:bg-slate-100">
-            About AJF
+      >
+        <li>
+          <Link
+            href="/"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            Home
           </Link>
+        </li>
 
-          <Link href="/about/mission" className="block px-5 py-3 hover:bg-slate-100">
-            Mission
+        {/* About */}
+        <li className="group relative py-3">
+
+          <span className="cursor-pointer hover:text-yellow-400 transition duration-300">
+            About Us ▾
+          </span>
+
+          <div
+            className="
+    absolute
+    left-0
+    top-full
+    min-w-[260px]
+    opacity-0
+    invisible
+    translate-y-2
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    transition-all
+    duration-300
+    bg-white
+    text-gray-800
+    rounded-xl
+    shadow-2xl
+    z-50
+    overflow-hidden
+    border
+    border-gray-100
+    "
+          >
+            <Link href="/about" className="block px-5 py-3 hover:bg-slate-100">
+              About AJF
+            </Link>
+
+            <Link href="/about/mission" className="block px-5 py-3 hover:bg-slate-100">
+              Mission
+            </Link>
+
+            <Link href="/about/vision" className="block px-5 py-3 hover:bg-slate-100">
+              Vision
+            </Link>
+
+            <Link href="/about/team" className="block px-5 py-3 hover:bg-slate-100">
+              Leadership Team
+            </Link>
+          </div>
+
+        </li>
+
+        {/* Our Work */}
+        <li className="group relative py-3">
+
+          <span className="cursor-pointer hover:text-yellow-400 transition duration-300">
+            Our Work ▾
+          </span>
+
+          <div
+            className="
+    absolute
+    left-0
+    top-full
+    min-w-[290px]
+    opacity-0
+    invisible
+    translate-y-2
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    transition-all
+    duration-300
+    bg-white
+    text-gray-800
+    rounded-xl
+    shadow-2xl
+    z-50
+    overflow-hidden
+    border
+    border-gray-100
+    "
+          >
+            <Link href="/areas/education" className="block px-5 py-3 hover:bg-slate-100">
+              📚 Education
+            </Link>
+
+            <Link href="/areas/healthcare" className="block px-5 py-3 hover:bg-slate-100">
+              🏥 Healthcare
+            </Link>
+
+            <Link href="/areas/drinking-water" className="block px-5 py-3 hover:bg-slate-100">
+              💧 Drinking Water
+            </Link>
+
+            <Link href="/areas/women-empowerment" className="block px-5 py-3 hover:bg-slate-100">
+              👩 Women Empowerment
+            </Link>
+
+            <Link href="/areas/environment" className="block px-5 py-3 hover:bg-slate-100">
+              🌳 Environment
+            </Link>
+
+            <Link href="/areas/winter-relief" className="block px-5 py-3 hover:bg-slate-100">
+              🧥 Winter Relief
+            </Link>
+          </div>
+
+        </li>
+        <li>
+          <Link href="/projects" className="hover:text-yellow-400 transition">
+            Projects
           </Link>
+        </li>
 
-          <Link href="/about/vision" className="block px-5 py-3 hover:bg-slate-100">
-            Vision
+        <li>
+          <Link href="/gallery" className="hover:text-yellow-400 transition">
+            Gallery
           </Link>
+        </li>
 
-          <Link href="/about/team" className="block px-5 py-3 hover:bg-slate-100">
-            Leadership Team
+        <li>
+          <Link href="/events" className="hover:text-yellow-400 transition">
+            Events
           </Link>
-        </div>
-      </li>
+        </li>
 
-      {/* Our Work */}
-      <li className="group relative">
-
-        <span className="cursor-pointer hover:text-yellow-400 transition">
-          Our Work ▾
-        </span>
-
-        <div
-          className="
-          absolute
-          hidden
-          group-hover:block
-          bg-white
-          text-gray-800
-          w-72
-          rounded-xl
-          shadow-2xl
-          top-10
-          z-50
-          overflow-hidden
-          "
-        >
-          <Link href="/areas/education" className="block px-5 py-3 hover:bg-slate-100">
-            Education
+        <li>
+          <Link href="/volunteer" className="hover:text-yellow-400 transition">
+            Volunteer
           </Link>
+        </li>
 
-          <Link href="/areas/healthcare" className="block px-5 py-3 hover:bg-slate-100">
-            Healthcare
+        <li>
+          <Link href="/internship" className="hover:text-yellow-400 transition">
+            Internship
           </Link>
+        </li>
 
-          <Link href="/areas/drinking-water" className="block px-5 py-3 hover:bg-slate-100">
-            Drinking Water
+        <li>
+          <Link href="/blog" className="hover:text-yellow-400 transition">
+            Blog
           </Link>
+        </li>
 
-          <Link href="/areas/women-empowerment" className="block px-5 py-3 hover:bg-slate-100">
-            Women Empowerment
+        <li>
+          <Link href="/contact" className="hover:text-yellow-400 transition">
+            Contact
           </Link>
+        </li>
 
-          <Link href="/areas/environment" className="block px-5 py-3 hover:bg-slate-100">
-            Environment
-          </Link>
-
-          <Link href="/areas/winter-relief" className="block px-5 py-3 hover:bg-slate-100">
-            Winter Relief
-          </Link>
-        </div>
-      </li>
-
-      <li>
-        <Link href="/projects" className="hover:text-yellow-400 transition">
-          Projects
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/gallery" className="hover:text-yellow-400 transition">
-          Gallery
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/events" className="hover:text-yellow-400 transition">
-          Events
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/volunteer" className="hover:text-yellow-400 transition">
-          Volunteer
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/internship" className="hover:text-yellow-400 transition">
-          Internship
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/blog" className="hover:text-yellow-400 transition">
-          Blog
-        </Link>
-      </li>
-
-      <li>
-        <Link href="/contact" className="hover:text-yellow-400 transition">
-          Contact
-        </Link>
-      </li>
-
-      <li>
-        <Link
-          href="/donate"
-          className="
+        <li>
+          <Link
+            href="/donate"
+            className="
           bg-gradient-to-r
           from-yellow-400
           to-yellow-600
@@ -185,14 +204,14 @@ return ( <nav
           hover:scale-105
           transition-all
           "
-        >
-          Donate Now
-        </Link>
-      </li>
-    </ul>
+          >
+            Donate Now
+          </Link>
+        </li>
+      </ul>
 
-  </div>
-</nav>
+    </div>
+  </nav>
 
-);
+  );
 }
