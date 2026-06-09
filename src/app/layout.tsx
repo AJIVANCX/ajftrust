@@ -63,15 +63,21 @@ return ( <html lang="en"> <body className="bg-white text-gray-900 overflow-x-hid
       strategy="afterInteractive"
     />
 
+    {/* Top Header */}
     <TopBar />
-<MainHeader />
-<Navbar />>
 
+    {/* Main Header */}
+    <MainHeader />
 
+    {/* Sticky Navbar */}
+    <Navbar />
+
+    {/* Main Content */}
     <main className="min-h-screen pb-20 md:pb-0">
       {children}
     </main>
 
+    {/* Footer */}
     <Footer />
 
   </body>
