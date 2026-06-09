@@ -98,7 +98,7 @@ return ( <nav
         <li><Link href="/volunteer" className="hover:text-yellow-400">Volunteer</Link></li>
         <li><Link href="/internship" className="hover:text-yellow-400">Internship</Link></li>
         <li><Link href="/blog" className="hover:text-yellow-400">Blog</Link></li>
-        <li><Link href="/contact" className="hover:text-yellow-400">Contact</Link></li>
+        <li><Link href="/contact" className="hover:text-yellow-400">Contact Us</Link></li>
 
       </ul>
 
