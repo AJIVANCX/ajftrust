@@ -1,27 +1,36 @@
+generator client {
+provider = "prisma-client-js"
+}
+
+datasource db {
+provider = "mysql"
+url      = env("DATABASE_URL")
+}
+
 model Intern {
-  id             Int      @id @default(autoincrement())
+id             Int      @id @default(autoincrement())
 
-  applicationId  String   @unique
+applicationId  String   @unique
 
-  fullName       String
-  fatherName     String
-  motherName     String
+fullName       String
+fatherName     String
+motherName     String
 
-  dob            String
+dob            String
 
-  mobile         String
-  email          String   @unique
+mobile         String
+email          String   @unique
 
-  address        String
-  pinCode        String
+address        String
+pinCode        String
 
-  state          String
-  district       String
+state          String
+district       String
 
-  username       String   @unique
-  password       String
+username       String   @unique
+password       String
 
-  status         String   @default("Pending")
+status         String   @default("Pending")
 
-  createdAt      DateTime @default(now())
+createdAt      DateTime @default(now())
 }
