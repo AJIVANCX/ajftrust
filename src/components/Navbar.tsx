@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (<nav
-    className="
+  className="
   sticky
   top-0
   z-[9999]
@@ -18,11 +18,11 @@ export default function Navbar() {
   via-blue-950
   to-slate-900
   text-white
-  border-b
+  border-b-2
   border-yellow-500
   shadow-lg
   "
-  > <div className="max-w-7xl mx-auto px-4">
+> <div className="max-w-7xl mx-auto px-4">
       {/* Desktop + Mobile Header */}
       <div className="flex items-center justify-between h-16">
 
