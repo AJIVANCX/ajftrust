@@ -14,23 +14,21 @@ const [aboutOpen, setAboutOpen] = useState(false);
 const [workOpen, setWorkOpen] = useState(false);
 
 return ( <nav
-   className="
-   fixed
-   top-[104px]
-   left-0
-   right-0
-   z-[9999]
-   w-full
-   bg-gradient-to-r
-   from-slate-900
-   via-blue-950
-   to-slate-900
-   text-white
-   border-b-2
-   border-yellow-500
-   shadow-xl
-   "
- > <div className="max-w-7xl mx-auto px-4">
+  className="
+  sticky
+  top-0
+  z-[9999]
+  w-full
+  bg-gradient-to-r
+  from-slate-900
+  via-blue-950
+  to-slate-900
+  text-white
+  border-b-2
+  border-yellow-500
+  shadow-lg
+  "
+> <div className="max-w-7xl mx-auto px-4">
 
     <div className="flex items-center justify-between h-16">
 
