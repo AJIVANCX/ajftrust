@@ -64,11 +64,9 @@ return ( <html lang="en"> <body className="bg-white text-gray-900 overflow-x-hid
     />
 
     <TopBar />
-    <MainHeader />
+<MainHeader />
+<Navbar />>
 
-    <div className="sticky top-0 z-[9999]">
-      <Navbar />
-    </div>
 
     <main className="min-h-screen pb-20 md:pb-0">
       {children}
